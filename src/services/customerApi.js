@@ -5,7 +5,7 @@ import axios from 'axios';
 const API_BASE_URL = 'https://customer-veqv.onrender.com';
 
 const apiClient = axios.create({
-  baseURL: 'https://customer-veqv.onrender.com',
+  baseURL: API_BASE_URL,
   headers: {
     'Content-Type': 'application/json'
   }
