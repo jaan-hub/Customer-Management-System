@@ -2,10 +2,10 @@ import axios from 'axios';
 
 // During development we call the Vite dev server at http://localhost:5173,
 // which will proxy /api/* requests to your deployed backend.
-const API_BASE_URL = '/api';
+const API_BASE_URL = 'https://customer-veqv.onrender.com';
 
 const apiClient = axios.create({
-  baseURL: API_BASE_URL,
+  baseURL: 'https://customer-veqv.onrender.com',
   headers: {
     'Content-Type': 'application/json'
   }
@@ -17,7 +17,7 @@ export const addCustomer = async (customer) => {
 };
 
 export const addCustomersBulk = async (customers) => {
-  const response = await apiClient.post('/add all', customers);
+  const response = await apiClient.post('/add-all', customers);
   return response.data;
 };
 
